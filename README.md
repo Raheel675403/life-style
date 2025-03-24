@@ -1,2 +1,2 @@
 # life-style
-<p>Author<b>Raheel Rahshid</b></p>
+<p>Author<b>:- Raheel Rahshid</b></p>
