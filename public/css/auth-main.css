@@ -1,0 +1,70 @@
+/* ===== Navbar Styles ===== */
+.navbar {
+    background-color: red;
+    color: white;
+    transition: all 0.3s ease;
+    width: 100%; /* Full width by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar:hover {
+    background-color: black;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar ul li a:hover {
+    color: gold !important;
+    background-color: #4a5568;
+    width: 150px;
+    text-align: center;
+    padding: 5px;
+}
+
+/* When sidebar is open, adjust header width */
+.small-header {
+    width: calc(100% - 200px) !important;
+    left: 200px;
+}
+
+/* ===== Sidebar Styles ===== */
+#sidebar {
+    width: 200px;
+    height: 100vh;
+    background: white;
+    position: fixed;
+    left: -200px;
+    top: 0;
+    transition: left 0.3s ease;
+    color: black;
+    padding: 20px;
+    z-index: 999;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#sidebar ul li:hover {
+    background: #007bff;
+}
+
+/* ===== End of Navbar and Sidebar Styles ===== */
