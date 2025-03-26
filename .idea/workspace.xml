@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="515097eb-5196-4945-bc0f-16933f02067a" name="Changes" comment="" />
+    <list default="true" id="515097eb-5196-4945-bc0f-16933f02067a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/auth-main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/auth-main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/app_layouts/auth_layout/app-main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app_layouts/auth_layout/app-main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/app_layouts/auth_layout/partial_component/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app_layouts/auth_layout/partial_component/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/app_layouts/auth_layout/partial_component/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app_layouts/auth_layout/partial_component/sidebar.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -196,6 +204,7 @@
       <workItem from="1742810679722" duration="829000" />
       <workItem from="1742811570606" duration="14944000" />
       <workItem from="1742913921108" duration="185000" />
+      <workItem from="1742986137078" duration="5349000" />
     </task>
     <servers />
   </component>

@@ -15,45 +15,47 @@
 </head>
 
 <body>
-
 <div class="container-fluid">
-    <div class="row">
-        @include('app_layouts.auth_layout.partial_component.header')
-    </div>
-
+    @include('app_layouts.auth_layout.partial_component.header')
     <div class="row">
         @include('app_layouts.auth_layout.partial_component.sidebar')
 
-        <div class="col-md-9">
-            <div class="content">
+        <div class="col-sm-10" id="main-content">
+            <div class="content text-center">
                 <h1>Welcome to My Website</h1>
                 <p>This is some content.</p>
             </div>
         </div>
     </div>
-</div>
 
+</div>
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
 <script>
     $(document).ready(function() {
-        $("#toggle-btn").click(function() {
-            let sidebar = $("#sidebar");
-            let navbar = $(".navbar");
-            let content = $(".content");
+        let sidebar = $("#sidebar");
+        let navbar = $(".navbar");
+        let content = $("#main-content");
 
-            if (sidebar.css("left") === "-200px") {
-                sidebar.css("left", "0");   // Open sidebar
-                navbar.addClass("small-header"); // Adjust header width
-                content.addClass("shift"); // Shift content
-            } else {
+        // Sidebar should be open on page load
+        sidebar.css("left", "0"); // Sidebar open
+        navbar.addClass("small-header"); // Adjust header width
+        content.attr("class", "col-sm-10"); // Set content width
+
+        $("#toggle-btn").click(function() {
+            if (sidebar.css("left") === "0px") {
                 sidebar.css("left", "-200px"); // Close sidebar
                 navbar.removeClass("small-header"); // Restore header width
-                content.removeClass("shift"); // Reset content shift
+                content.attr("class", "col-sm-12"); // Expand content
+            } else {
+                sidebar.css("left", "0"); // Open sidebar
+                navbar.addClass("small-header"); // Adjust header width
+                content.attr("class", "col-sm-10"); // Set content width
             }
         });
     });
+
 </script>
 
 @section('script')
