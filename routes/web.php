@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'welcome');
-Route::view('app', 'app_layouts.auth_layout.app-main');
+Route::view('app', 'pages.overview');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])

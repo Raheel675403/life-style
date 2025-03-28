@@ -22,8 +22,7 @@
 
         <div class="col-sm-10" id="main-content">
             <div class="content text-center">
-                <h1>Welcome to My Website</h1>
-                <p>This is some content.</p>
+               @yield('content')
             </div>
         </div>
     </div>
@@ -42,16 +41,19 @@
         sidebar.css("left", "0"); // Sidebar open
         navbar.addClass("small-header"); // Adjust header width
         content.attr("class", "col-sm-10"); // Set content width
+        content.find('.overview').css('margin-left', '-20px');
 
         $("#toggle-btn").click(function() {
             if (sidebar.css("left") === "0px") {
                 sidebar.css("left", "-200px"); // Close sidebar
                 navbar.removeClass("small-header"); // Restore header width
                 content.attr("class", "col-sm-12"); // Expand content
+                content.find('.overview').css({'padding-left': '31px','margin-left':'0'});
             } else {
                 sidebar.css("left", "0"); // Open sidebar
                 navbar.addClass("small-header"); // Adjust header width
                 content.attr("class", "col-sm-10"); // Set content width
+                content.find('.overview').css('margin-left', '-20px');
             }
         });
     });
