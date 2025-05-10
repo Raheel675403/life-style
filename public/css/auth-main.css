@@ -1,0 +1,94 @@
+/* ===== Navbar Styles ===== */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: fixed;
+    width: 100%;
+}
+.container-fluid {
+    padding: 1px !important;
+    margin: 0 !important;
+    width: 100% !important;
+}
+.main-header{
+    background-color: #7a0404;
+    line-height:60px;
+}
+.navbar {
+    background-color: #3b0909;
+    color: white;
+    transition: all 0.3s ease;
+    width: 100%; /* Full width by default */
+    position: fixed;
+    top: 1px;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar:hover {
+    background-color: black;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-left: 30px;
+    padding-left: 10px;
+}
+
+.navbar ul li a:hover {
+    color: gold !important;
+    background-color: #4a5568;
+    width: 150px;
+    text-align: center;
+    padding: 5px;
+}
+#toggle-btn{
+    margin-left: 50px;
+}
+/* When sidebar is open, adjust header width */
+.small-header {
+    width: calc(100% - 201px) !important;
+    left: 201px;
+}
+
+/* ===== Sidebar Styles ===== */
+#sidebar {
+    width: 200px;
+    height: 100vh;
+    background: #3b0909;
+    position: fixed;
+    left: -200px;
+    top: 63px;
+    transition: left 0.3s ease;
+    color: white;
+    padding: 20px;
+    z-index: 999;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#sidebar ul li:hover {
+    background: #007bff;
+}
+#main-content {
+    height: calc(100vh - 60px); /* Navbar ki height ka adjust */
+    overflow-y: auto; /* Vertical scrolling allow */
+}
+
+/* ===== End of Navbar and Sidebar Styles ===== */
